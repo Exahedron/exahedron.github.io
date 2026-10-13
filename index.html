@@ -4,19 +4,39 @@
     <title>Exahedron's Website</title>
     <style>
         body {
-            background: radial-gradient(circle,#000000,#03030a,#00050C);
+            background: radial-gradient(circle,#000000,#03030a,#00050c);
             color: white;
             font-family: Inter, sans-serif;
             margin-top: 25px;
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-weight: 300;
+        }
         }
         h1 {
             text-align: center;
             font-weight: 200;
             letter-spacing: 5px;
             white-space: nowrap;
-            position: absolute;
-            font-size: 2.25em;
+            font-size: 2.75em;
             margin: 0;
+        }
+        .subtitle {
+            font-size: 1.3em;
+            font-weight: 200;
+            letter-spacing: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            color: #ffffffbf;
+            white-space: nowrap;
+        }
+        .title-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
         .square {
             position: relative;
@@ -35,18 +55,33 @@
             height: 100%;       
             box-sizing: border-box;
             background-color: transparent;
-            border: 3px solid #ffffff7f;
+            border: 3px solid #ffffff38;
             border-radius: 2px;
             transform: rotate(-15deg);
             z-index: -1;      
         }
+        .margin-line {
+            height: 2px;
+            background-color: #ffffff1f;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <center><div class="square"><h1>Exahedron</h1></div></center>
-    <p>Placeholder</p>
+    <center><div class="square"><div class="title-group">
+        <span>&nbsp;</span>
+        <h1>Exahedron</h1>
+        <span class="subtitle">Placeholder</span>
+    </div></div></center>
+    <div class="margin-line"></div>
+    <p>
+        Welcome to my website. There's nothing to see yet though.
+    </p>
 </body>
 </html>

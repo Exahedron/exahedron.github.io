@@ -62,3 +62,15 @@ h1 {
     margin-right: 15px;
     margin-top: 25px;
 }
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: none; 
+    pointer-events: none;
+    z-index: 1;
+}

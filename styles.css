@@ -8,6 +8,7 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 300;
+    font-size: 1.125em
 }
 h1 {
     text-align: center;
@@ -17,10 +18,17 @@ h1 {
     font-size: 2.75em;
     margin: 0;
 }
-h2, h3 {
+h2 {
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 400;
+    font-size: 1.5em
+}
+h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 1.2em
 }
 .subtitle {
     font-size: 1.3em;

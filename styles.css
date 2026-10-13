@@ -66,9 +66,9 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
+    width: 1px;  /* Base star size width */
+    height: 1px; /* Base star size height */
+    border-radius: 50%; /* Makes all box-shadow stars perfectly round */
     background: transparent;
     box-shadow: none; 
     pointer-events: none;

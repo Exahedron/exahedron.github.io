@@ -8,7 +8,7 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 300;
-    font-size: 1.125em
+    font-size: 1.05em;
 }
 h1 {
     text-align: center;
@@ -48,8 +48,8 @@ h3 {
 }
 .square {
     position: relative;
-    width: 110px;
-    height: 110px;
+    width: 105px;
+    height: 105px;
     display: flex;
     justify-content: center;
     align-items: center;

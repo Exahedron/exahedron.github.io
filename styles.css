@@ -95,7 +95,7 @@ h3 {
 }
 .fade-in {
   opacity: 0;
-  animation: fadeIn 1.5s cubic-bezier(0, 0, 0.1, 1) forwards;
+  animation: fadeIn 1.5s cubic-bezier(0, 0, 0.0, 1) forwards;
 }
 
 @keyframes fadeIn {

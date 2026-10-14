@@ -27,14 +27,17 @@ h1 {
 h2 {
     margin-left: 20px;
     margin-right: 20px;
-    font-weight: 400;
-    font-size: 1.5em
+    font-weight: 300;
+    font-size: 1.7em;
+    text-align: center;
+    letter-spacing: 2px;
 }
 h3 {
     margin-left: 20px;
+    letter-spacing: 1px;
     margin-right: 20px;
-    font-weight: 400;
-    font-size: 1.2em
+    font-weight: 300;
+    font-size: 1.4em;
 }
 .subtitle {
     font-size: 1.3em;

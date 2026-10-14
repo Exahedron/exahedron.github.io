@@ -4,12 +4,6 @@ body {
             font-family: Inter, sans-serif;
             margin-top: 25px;
 }
-body {
-    background: radial-gradient(circle at center,#000000,#010104,#000307);
-            color: white;
-            font-family: Inter, sans-serif;
-            margin-top: 25px;
-}
 p {
     margin-left: 20px;
     margin-right: 20px;

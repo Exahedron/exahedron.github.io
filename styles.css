@@ -4,7 +4,7 @@ body {
     color: white;
     font-family: Inter, sans-serif;
     margin-top: 25px;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.5s ease, color 0.5s ease;
 }
 body.light-mode {
     --star-rgb: 45, 55, 85;

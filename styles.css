@@ -1,8 +1,46 @@
 body {
-    background: radial-gradient(circle at center,#000000,#010104,#000307);
-            color: white;
-            font-family: Inter, sans-serif;
-            margin-top: 25px;
+    --star-rgb: 255, 255, 255;
+    background: radial-gradient(circle at center, #000000, #010104, #000307);
+    color: white;
+    font-family: Inter, sans-serif;
+    margin-top: 25px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+body.light-mode {
+    --star-rgb: 45, 55, 85;
+    background: radial-gradient(circle at center, #ffffff, #f2f4fa, #e8ecf5);
+    color: #202331;
+}
+.theme-toggle {
+    position: absolute;
+    z-index: 2;
+    top: 16px;
+    right: 16px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    cursor: pointer;
+    background: #00000000;
+    border-color: #ffffff55;
+    transition: transform 0.15s ease, filter 0.15s ease, background 0.3s ease;
+}
+.theme-toggle:active {
+    transform: scale(0.92);
+    filter: brightness(1.25);
+}
+body.light-mode .theme-toggle {
+    color: #202331;
+    background: #ffffffaa;
+    border-color: #20233155;
+}
+body.light-mode .subtitle {
+    color: #202331bf;
+}
+body.light-mode .square::before {
+    border-color: #20233138;
+}
+body.light-mode .margin-line {
+    background-color: #20233130;
 }
 p {
     margin-left: 20px;
@@ -32,6 +70,20 @@ h3 {
     margin-right: 20px;
     font-weight: 300;
     font-size: 1.4em;
+}
+button {
+    color: #ffffff;
+    font-weight: 300;
+    font-family: Inter, sans-serif;
+    border:1.2px solid #ffffff3f;
+    border-radius: 3px;
+    width:90px;
+    height:30px;
+    text-align:center;
+}
+.flex{
+    display: flex;
+    justify-content: flex-end;
 }
 .subtitle {
     font-size: 1.3em;
@@ -98,7 +150,7 @@ h3 {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;

@@ -1,3 +1,32 @@
+@view-transition {
+    navigation: auto;
+}
+
+:root {
+    view-transition-name: none;
+}
+
+.transition {
+    view-transition-name: page-content;
+}
+
+::view-transition-old(page-content) {
+    animation: page-fade-out 0.7s ease both;
+}
+
+::view-transition-new(page-content) {
+    animation: page-fade-in 0.7s ease 0.7s both;
+}
+
+@keyframes page-fade-out {
+    to { opacity: 0; }
+}
+
+@keyframes page-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 body {
     --star-rgb: 255, 255, 255;
     background: radial-gradient(circle at center, #000000, #010104, #000307);
@@ -14,8 +43,8 @@ body.light-mode {
 .theme-toggle {
     position: absolute;
     z-index: 2;
-    top: 16px;
-    right: 16px;
+    top: 30px;
+    right: 20px;
     width: auto;
     height: auto;
     padding: 8px 12px;
@@ -23,6 +52,10 @@ body.light-mode {
     background: #00000000;
     border-color: #ffffff55;
     transition: transform 0.15s ease, filter 0.15s ease, background 0.3s ease;
+}
+#main .theme-toggle {
+    opacity: 0;
+    animation: open 1.3s cubic-bezier(0, 0, 0.0, 1) forwards;
 }
 .theme-toggle:active {
     transform: scale(0.92);
@@ -47,6 +80,10 @@ p {
     margin-right: 20px;
     font-weight: 300;
     font-size: 1.05em;
+}
+a {
+    color: currentColor;
+    text-shadow:0px 0px 0.3em;
 }
 h1 {
     text-align: center;
@@ -144,11 +181,11 @@ button {
     z-index: 1;
 }
 .fade-in {
-  opacity: 0;
-  animation: fadeIn 1.3s cubic-bezier(0, 0, 0.0, 1) forwards;
+    opacity: 0;
+    animation: open 1.3s cubic-bezier(0, 0, 0.0, 1) forwards;
 }
 
-@keyframes fadeIn {
+@keyframes open {
   from {
     opacity: 0;
     transform: translateY(-20px);

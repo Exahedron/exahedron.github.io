@@ -1,32 +1,6 @@
 @view-transition {
     navigation: auto;
 }
-
-:root {
-    view-transition-name: none;
-}
-
-.transition {
-    view-transition-name: page-content;
-}
-
-::view-transition-old(page-content) {
-    animation: page-fade-out 0.5s ease both;
-}
-
-::view-transition-new(page-content) {
-    animation: page-fade-in 0.5s ease 0.5s both;
-}
-
-@keyframes page-fade-out {
-    to { opacity: 0; }
-}
-
-@keyframes page-fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 body {
     --star-rgb: 255, 255, 255;
     background: radial-gradient(circle at center, #000000, #010104, #000307);
@@ -43,7 +17,7 @@ body.light-mode {
 .theme-toggle {
     position: absolute;
     z-index: 2;
-    top: 30px;
+    top: 15px;
     right: 20px;
     width: auto;
     height: auto;
@@ -52,10 +26,6 @@ body.light-mode {
     background: #00000000;
     border-color: #ffffff55;
     transition: transform 0.15s ease, filter 0.15s ease, background 0.3s ease;
-}
-#main .theme-toggle {
-    opacity: 0;
-    animation: open 1.3s cubic-bezier(0, 0, 0.0, 1) forwards;
 }
 .theme-toggle:active {
     transform: scale(0.92);
@@ -119,9 +89,11 @@ button {
     height:30px;
     text-align:center;
 }
-.flex{
+.return{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    margin-left: 10px;
 }
 .subtitle {
     font-size: 1.3em;

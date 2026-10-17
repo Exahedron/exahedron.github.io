@@ -17,15 +17,21 @@ function generateStars(numberOfStars) {
 }
 window.addEventListener('DOMContentLoaded', () => {
   generateStars(250);
-  });
-  const themeToggle = document.getElementById('theme-toggle');
-  themeToggle.addEventListener('click', () => {
-    const isLightMode = document.body.classList.toggle('light-mode');
-    themeToggle.textContent = isLightMode ? 'Dark mode' : 'Light mode';
-    themeToggle.setAttribute('aria-pressed', String(isLightMode));
-    themeToggle.addEventListener('keydown', (event) => {
-    if (event.repeat) {
-      event.preventDefault();
-    }
-  });
 });
+const themeToggle = document.getElementById('theme-toggle');
+const savedTheme = localStorage.getItem('theme');
+const isLightMode = savedTheme === 'light';
+
+document.body.classList.toggle('light-mode', isLightMode);
+
+if (themeToggle) {
+  themeToggle.textContent = isLightMode ? 'Dark mode' : 'Light mode';
+  themeToggle.setAttribute('aria-pressed', String(isLightMode));
+
+  themeToggle.addEventListener('click', () => {
+    const lightModeEnabled = document.body.classList.toggle('light-mode');
+    localStorage.setItem('theme', lightModeEnabled ? 'light' : 'dark');
+    themeToggle.textContent = lightModeEnabled ? 'Dark mode' : 'Light mode';
+    themeToggle.setAttribute('aria-pressed', String(lightModeEnabled));
+  });
+}

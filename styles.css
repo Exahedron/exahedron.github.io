@@ -29,11 +29,9 @@ body.light-mode {
 }
 .theme-toggle:active {
     transform: scale(0.92);
-    filter: brightness(1.25);
 }
 body.light-mode .theme-toggle {
     color: #000000;
-    background: #ffffff;
     border-color: #00000055;
 }
 body.light-mode .subtitle {

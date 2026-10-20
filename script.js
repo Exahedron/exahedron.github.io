@@ -34,4 +34,9 @@ if (themeToggle) {
     themeToggle.textContent = lightModeEnabled ? 'Dark mode' : 'Light mode';
     themeToggle.setAttribute('aria-pressed', String(lightModeEnabled));
   });
+  themeToggle.addEventListener('keydown', (event) => {
+    if (event.repeat) {
+      event.preventDefault();
+    };
+  });
 }

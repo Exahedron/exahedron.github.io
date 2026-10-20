@@ -33,39 +33,22 @@ natural (counting) numbers.<br>
     </p>
     <h2>I. 0 ~ &epsilon;<sub>0</sub></h2>
     <p>
-This level contains ordinals that are provably well-founded using Peano axioms.
+This level contains ordinals that are provably well-founded using the Peano Arithmetic (PA) axioms.
     </p>
     <p>
 <ul>
     <li>\(0\)</li>
     <ul>
         <li>The least ordinal.</li>
-        <li>\(\varnothing\)</li>
     </ul>
     <li>\(1\)</li>
-        <ul>
-        <li>\(\{0\}\)</li>
-        </ul>
     <li>\(2\)</li>
-        <ul>
-        <li>\(\{0,1\}\)</li>
-        </ul>
     <li>\(3\)</li>
-        <ul>
-        <li>\(\{0,1,2\}\)</li>
-        </ul>
     <li>\(4\)</li>
-        <ul>
-        <li>\(\{0,1,2,3\}\)</li>
-        </ul>
     <li>\(5\)</li>
-        <ul>
-        <li>\(\{0,1,2,3,4\}\)</li>
-        </ul>
     <li>\(\omega\)</li>
     <ul>
         <li>The first transfinite ordinal.</li>
-        <li>\(\mathbb{N}=\{0,1,2,3,4,5,6,\cdots\}\)</li>
         <li>It is a limit ordinal, meaning you can't reach it from adding 1 to lower ordinals.</li>
         <li>Zero is not a limit ordinal because it is not the limit of any ordinal sequence.</li>
     </ul>
@@ -108,8 +91,209 @@ This level contains ordinals that are provably well-founded using Peano axioms.
     <li>\(\omega^4\)</li>
     <li>\(\omega^5\)</li>
     <li>\(\omega^\omega\)</li>
-        <ul>
+    <ul>
         <li>The first ordinal that is the itself-th limit ordinal.
+        </li>
+    </ul>
+    <li>\(\omega^\omega+1\)</li>
+    <li>\(\omega^\omega\cdot2\)</li>
+    <li>\(\omega^{\omega+1}\)</li>
+    <li>\(\omega^{\omega+2}\)</li>
+    <li>\(\omega^{\omega+3}\)</li>
+    <li>\(\omega^{\omega\cdot2}\)</li>
+    <ul>
+        <li>The second ordinal that is the itself-th limit ordinal.
+        </li>
+    </ul>
+    <li>\(\omega^{\omega\cdot3}\)</li>
+    <li>\(\omega^{\omega^2}\)</li>
+    <li>\(\omega^{\omega^2+1}\)</li>
+    <li>\(\omega^{\omega^2\cdot2}\)</li>
+    <li>\(\omega^{\omega^3}\)</li>
+    <li>\(\omega^{\omega^\omega}\)</li>
+    <li>\(\omega^{\omega^\omega+1}\)</li>
+    <li>\(\omega^{\omega^\omega\cdot2}\)</li>
+    <li>\(\omega^{\omega^{\omega+1}}\)</li>
+    <li>\(\omega^{\omega^{\omega\cdot2}}\)</li>
+    <li>\(\omega^{\omega^{\omega^2}}\)</li>
+    <li>\(\omega^{\omega^{\omega^\omega}}\)</li>
+    <li>\(\omega^{\omega^{\omega^{\omega^\omega}}}\)</li>
+    <li>\(\varepsilon_0\)</li>
+    <ul>
+        <li>The first epsilon number! Also the limit of Primitive Sequence System
+            and Cantor Normal Form, and the smallest ordinal that the
+            Peano axioms can't prove as well-ordered.
+        </li>
+        <li>
+            Epsilon numbers are ordinals \(\varepsilon\) such that \(\omega^\varepsilon=\varepsilon\).
+        </li>
+        <li>
+            Buchholz's Psi: \(\psi_0(\Omega)\)
+        </li>
+        <li>
+            Sometimes called <b>Small Cantor Ordinal</b>
+        </li>
+        <li>
+            End of this level.
+        </li>
+    </ul>
+</ul>
+<h2>II. &epsilon;<sub>0</sub> ~ &Gamma;<sub>0</sub></h2>
+This level contains ordinals that are provably well-founded using
+Arithmetical Transfinite Recursion (ATR<sub>0</sub></sub>).
+<ul>
+    <li>\(\varepsilon_0\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega)\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0+1\)</li>
+    <li>\(\varepsilon_0\cdot2\)</li>
+    <li>\(\varepsilon_0\cdot3\)</li>
+    <li>\(\varepsilon_0\cdot\omega\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+1)\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0^2\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+\psi_0(\Omega))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0^3\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+\psi_0(\Omega)\cdot2)\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0^\omega\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+\psi_0(\Omega+1))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0^{\varepsilon_0}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+\psi_0(\Omega+\psi_0(\Omega)))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0^{\varepsilon_0^2}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+\psi_0(\Omega+\psi_0(\Omega)\cdot2))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0^{\varepsilon_0^\omega}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+\psi_0(\Omega+\psi_0(\Omega+1)))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0^{\varepsilon_0^{\varepsilon_0}}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+\psi_0(\Omega+\psi_0(\Omega+\psi_0(\Omega))))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_0^{\varepsilon_0^{\varepsilon_0^{\varepsilon_0}}}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega+\psi_0(\Omega+\psi_0(\Omega+\psi_0(\Omega+\psi_0(\Omega)))))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_1\)</li>
+    <ul>
+        <li>
+            The second epsilon number.
+        </li>
+        <li>\(\psi_0(\Omega\cdot2)\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_1+1\)</li>
+    <li>\(\varepsilon_1\cdot2\)</li>
+    <li>\(\varepsilon_1^2\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot2+\psi_0(\Omega\cdot2))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_1^\omega\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot2+\psi_0(\Omega\cdot2+1))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_1^{\varepsilon_0}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot2+\psi_0(\Omega\cdot2+\psi_0(\Omega)))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_1^{\varepsilon_1}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot2+\psi_0(\Omega\cdot2+\psi_0(\Omega\cdot2)))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_1^{\varepsilon_1^{\varepsilon_1}}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot2+\psi_0(\Omega\cdot2+\psi_0(\Omega\cdot2+\psi_0(\Omega\cdot2))))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_2\)</li>
+    <ul>
+        <li>
+            The third epsilon number.
+        </li>
+        <li>\(\psi_0(\Omega\cdot3)\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_2^2\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot3+\psi_0(\Omega\cdot3))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_2^{\varepsilon_2}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot3+\psi_0(\Omega\cdot3+\psi_0(\Omega\cdot3)))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_2^{\varepsilon_2^{\varepsilon_2}}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot3+\psi_0(\Omega\cdot3+\psi_0(\Omega\cdot3+\psi_0(\Omega\cdot3))))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_3\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot4)\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_4\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot5)\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_\omega\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot\omega)\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_{\omega+1}\)</li>
+    <li>\(\varepsilon_{\omega+2}\)</li>
+    <li>\(\varepsilon_{\omega\cdot2}\)</li>
+    <li>\(\varepsilon_{\omega\cdot3}\)</li>
+    <li>\(\varepsilon_{\omega^2}\)</li>
+    <li>\(\varepsilon_{\omega^3}\)</li>
+    <li>\(\varepsilon_{\omega^\omega}\)</li>
+    <li>\(\varepsilon_{\omega^{\omega^2}}\)</li>
+    <li>\(\varepsilon_{\omega^{\omega^\omega}}\)</li>
+    <li>\(\varepsilon_{\varepsilon_0}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot\psi_0(\Omega))\)
+        </li>
+    </ul>
+    <li>\(\varepsilon_{\varepsilon_0+1}\)</li>
+    <li>\(\varepsilon_{\varepsilon_0^2}\)</li>
+    <li>\(\varepsilon_{\varepsilon_1}\)</li>
+    <li>\(\varepsilon_{\varepsilon_\omega}\)</li>
+    <li>\(\varepsilon_{\varepsilon_{\varepsilon_0}}\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega\cdot\psi_0(\Omega\cdot\psi_0(\Omega)))\)
+        </li>
+    </ul>
+    <li>\(\zeta_0\)</li>
+    <ul>
+        <li>\(\psi_0(\Omega^2)\)
         </li>
     </ul>
 </ul>

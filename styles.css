@@ -10,7 +10,7 @@ body {
     transition: background 0.5s ease, color 0.5s ease;
 }
 body.light-mode {
-    --star-rgb: 45, 55, 85;
+    --star-rgb: 0, 0, 0;
     background: linear-gradient(to right, #ffffff);
     color: black;
 }

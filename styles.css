@@ -3,7 +3,7 @@
 }
 body {
     --star-rgb: 255, 255, 255;
-    background: radial-gradient(circle at center, #000000, #010104, #000307);
+    background: linear-gradient(to right, #000000, #010104, #000307);
     color: white;
     font-family: Inter, sans-serif;
     margin-top: 25px;
@@ -11,7 +11,7 @@ body {
 }
 body.light-mode {
     --star-rgb: 45, 55, 85;
-    background: radial-gradient(circle at center, #ffffff);
+    background: linear-gradient(to right, #ffffff);
     color: #202331;
 }
 .theme-toggle {

@@ -12,7 +12,7 @@ body {
 body.light-mode {
     --star-rgb: 45, 55, 85;
     background: linear-gradient(to right, #ffffff);
-    color: #202331;
+    color: black;
 }
 .theme-toggle {
     position: absolute;
